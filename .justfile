@@ -13,3 +13,7 @@ push: image
     docker push collinvandyck/blog
 
 deploy: push
+    #!/usr/bin/env bash
+    cd ../containers/host/vps
+    source .envrc
+    just deploy-blog
