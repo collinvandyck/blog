@@ -5,10 +5,88 @@ search: false
 
 @charset "utf-8";
 
+$intro-transition  : none;
+$global-transition : none;
+
+$serif      : Georgia, Times, serif;
+$sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Arial, sans-serif;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace;
+
+$global-font-family: $monospace;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes";
 
 .page {
   font-size: $type-size-5;
 }
 
+.page::selection,
+.page *::selection {
+  background: rgba(255, 255, 255, 0.2);  // Semi-transparent white
+  // or a specific color like:
+  // background: #465465;  // A muted blue
+  // or:
+  // background: #4a4a4a;  // Lighter grey
+}
+
+.page__content {
+  font-size: $type-size-6;
+}
+
+.page__content ul {
+  margin-bottom: 1em;
+  li {
+    margin-bottom: 0.2em;
+    line-height: 1.4;
+  }
+}
+
+.page__content {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;    // Space above headings
+    margin-bottom: 1em;   // Space below headings - increase this value to add more space
+  }
+}
+
+.preserve_linebreaks {
+  white-space: pre-wrap;
+  font-family: $monospace;  // Keep your monospace font
+  margin-top: 1em;         // Add some spacing above the excerpt
+}
+
+code.language-plaintext {
+  background: #2a2a2a;         // Darker background for contrast
+  border: 1px solid #666;      // Light border
+  font-size: 1.1em;           // Slightly larger text
+  padding: 2px 5px;           // Some padding around the text
+  border-radius: 3px;         // Rounded corners
+  color: #e6e6e6;            // Lighter text for contrast
+  font-family: $monospace;    // Keep your monospace font
+}
+
+div.highlight {
+  margin: 1em 0;         // Spacing above and below
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0.2em;          // Internal padding
+  background: #2a2a2a;   // Background color
+  border: 1px solid #666; // Border
+  border-radius: 4px;    // Rounded corners
+
+  pre.highlight {
+    // Styles for the actual code inside
+    font-family: $monospace;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  pre.highlight::selection,
+  pre.highlight *::selection {
+    background: rgba(255, 255, 255, 0.2);  // Semi-transparent white
+    // or a specific color like:
+    // background: #465465;  // A muted blue
+    // or:
+    // background: #4a4a4a;  // Lighter grey
+  }
+}
