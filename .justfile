@@ -12,6 +12,7 @@ serve-docker: image
 push: image
     docker push collinvandyck/blog
 
+# this is the one that does everything.
 deploy: push
     #!/usr/bin/env bash
     cd ../containers/host/vps
