@@ -82,6 +82,9 @@ author:
     - label: "Bluesky"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://bsky.app/profile/collinvandyck.bsky.social"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/collin-van-dyck-461250131/"
 
 
 defaults:
