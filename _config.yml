@@ -64,9 +64,11 @@ author:
   name             : "Collin"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "I like computers"
-  location         : "Spider Town, USA"
   email            : "collin@5xx.engineer"
   links:
+    - label: "Spider Town"
+      icon: "fas fa-fw fa-location-dot"
+      url: "https://www.google.com/maps/place/Durham,+NC/@36.0017986,-78.9674822,12z/data=!3m1!4b1!4m6!3m5!1s0x89ace471120f66f1:0xe17ada898a46f27e!8m2!3d35.9940329!4d-78.898619!16zL20vMDEzaHh2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://5xx.engineer"
