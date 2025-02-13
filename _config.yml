@@ -29,6 +29,7 @@ github_username:  collinvandyck
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
 
 sass:
   quiet_deps: true
