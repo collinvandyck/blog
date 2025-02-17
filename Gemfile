@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.3"
+gem 'jekyll-target-blank'
 
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 gem "minimal-mistakes-jekyll"
