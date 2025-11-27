@@ -21,7 +21,7 @@
 title: 5xx.engineer
 email: collin@5xx.engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.5xx.engineer" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://5xx.engineer" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: collintraxx
 github_username:  collinvandyck
 
